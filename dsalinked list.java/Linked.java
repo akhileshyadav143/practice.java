@@ -1,4 +1,11 @@
 public class Linked {
+  public static void display(Node head) {
+    Node temp=head;
+    while (temp!=null) {
+        System.out.println(temp.data+"");
+        temp=temp.next;
+    }
+  }
     public static class Node{
         int data;  //value
         Node next;  //address of next node
@@ -20,6 +27,7 @@ public class Linked {
       b.next=c;
       c.next=d;
       d.next=e;
+      display(a);
     //     System.out.println(a.data);
     //   System.out.println(b.data);
     //   System.out.println(c.data);
@@ -31,6 +39,18 @@ public class Linked {
         System.out.println(a.next.next.next.data);
           System.out.println(e.data);
 
+    //     Node temp=a;
+    //   for(int i=1;i<5;i++){
+    //     System.out.println(temp.data);
+    //     temp=temp.next;
+    //   }
+
+
+    Node temp =a;
+    while(temp!=null){
+        System.out.println(temp.data +""  );
+        temp=temp.next;
+    }
 
      }
 }
